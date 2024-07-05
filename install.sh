@@ -85,13 +85,13 @@ until apt-get install -y nginx python3-certbot-nginx; do sleep 1; done
 
 # Install default files
 git clone --depth 1 https://github.com/eldoy/waveorb-server2.git
-base=$HOME/waveorb-server/config
+base=$HOME/waveorb-server2/config
 cp $base/etc/ssh/* /etc/ssh
 cp $base/etc/nginx/*.conf /etc/nginx
 cp $base/etc/systemd/system/*.service /etc/systemd/system
 cp $base/.vimrc $HOME
 cp $base/.zshrc $HOME
-cd $HOME/waveorb-server && npm i
+cd $HOME/waveorb-server2 && npm i
 cd $HOME
 
 # Enable and start services
