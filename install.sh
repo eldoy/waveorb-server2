@@ -100,7 +100,7 @@ systemctl daemon-reload
 # Enable services
 systemctl enable nginx
 systemctl enable mongod
-systemctl enable redisLine
+systemctl enable redis-server
 
 # SSH keys
 cat /dev/zero | ssh-keygen -q -N ""
