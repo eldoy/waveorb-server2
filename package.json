@@ -9,7 +9,9 @@
   "author": "Vidar Eldøy <vidar@eldoy.com>",
   "license": "MIT",
   "dependencies": {
-    "ecmaserver": "github:eldoy/ecmaserver",
     "extras": "^0.11.2"
+  },
+  "devDependencies": {
+    "ecmaserver": "github:eldoy/ecmaserver"
   }
 }
